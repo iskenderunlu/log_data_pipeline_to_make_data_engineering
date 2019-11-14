@@ -1,0 +1,2849 @@
+2019-11-14 12:25:26 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 12:25:26 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 12:25:26 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 12:25:26 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 12:25:26 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 12:25:26 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573723526908
+2019-11-14 12:25:27 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 12:25:27 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: en_jaPdMS_i6wB8HD8br0A
+2019-11-14 12:25:27 [cluster-ClusterId{value='5dcd1d870a5d2b473a0fce6c', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:88}] to localhost:27017
+2019-11-14 12:25:27 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 12:25:27 [cluster-ClusterId{value='5dcd1d870a5d2b473a0fce6c', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1992833}
+2019-11-14 12:25:27 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:89}] to localhost:27017
+2019-11-14 12:25:27 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 12:25:27 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 3000 with epoch 5
+2019-11-14 12:55:48 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 12:55:48 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 12:55:48 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 12:55:48 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 12:55:48 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 12:55:48 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573725348629
+2019-11-14 12:55:48 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 12:55:48 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 12:55:48 [cluster-ClusterId{value='5dcd24a4f0258d617c519fcb', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:90}] to localhost:27017
+2019-11-14 12:55:48 [cluster-ClusterId{value='5dcd24a4f0258d617c519fcb', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1802975}
+2019-11-14 12:55:48 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:91}] to localhost:27017
+2019-11-14 12:55:48 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 12:55:48 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 12:55:49 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 0
+2019-11-14 12:59:35 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 12:59:35 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 12:59:35 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 12:59:35 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 12:59:35 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 12:59:35 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573725575560
+2019-11-14 12:59:35 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 12:59:35 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 12:59:35 [cluster-ClusterId{value='5dcd2587fc03c1478a4d1a74', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:92}] to localhost:27017
+2019-11-14 12:59:35 [cluster-ClusterId{value='5dcd2587fc03c1478a4d1a74', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2172350}
+2019-11-14 12:59:35 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:93}] to localhost:27017
+2019-11-14 12:59:35 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 12:59:35 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 12:59:35 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 1
+2019-11-14 13:19:45 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 13:19:45 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 13:19:45 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 13:19:45 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 13:19:45 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 13:19:45 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573726785357
+2019-11-14 13:19:45 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 13:19:45 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 13:19:45 [cluster-ClusterId{value='5dcd2a4119eb13198be14fcc', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:96}] to localhost:27017
+2019-11-14 13:19:45 [cluster-ClusterId{value='5dcd2a4119eb13198be14fcc', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2107076}
+2019-11-14 13:19:45 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:97}] to localhost:27017
+2019-11-14 13:19:45 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 13:19:45 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 13:19:45 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 2
+2019-11-14 14:26:12 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 14:26:12 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 14:26:12 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 14:26:12 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 14:26:12 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 14:26:12 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573730772364
+2019-11-14 14:26:12 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 14:26:12 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 14:26:12 [cluster-ClusterId{value='5dcd39d408c45c784dec392a', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:98}] to localhost:27017
+2019-11-14 14:26:12 [cluster-ClusterId{value='5dcd39d408c45c784dec392a', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2010343}
+2019-11-14 14:26:12 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:99}] to localhost:27017
+2019-11-14 14:26:12 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 14:26:12 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 14:26:12 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 3
+2019-11-14 15:32:34 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 15:32:35 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 15:32:35 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 15:32:35 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 15:32:35 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 15:32:35 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573734755053
+2019-11-14 15:32:35 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 15:32:35 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 15:32:35 [cluster-ClusterId{value='5dcd49633b5f8677275a549d', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:100}] to localhost:27017
+2019-11-14 15:32:35 [cluster-ClusterId{value='5dcd49633b5f8677275a549d', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2282900}
+2019-11-14 15:32:35 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:101}] to localhost:27017
+2019-11-14 15:32:35 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 15:32:35 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 15:32:35 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 4
+2019-11-14 15:59:53 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 15:59:53 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 15:59:53 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 15:59:53 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 15:59:53 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 15:59:53 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573736393788
+2019-11-14 15:59:53 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 15:59:54 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 15:59:54 [cluster-ClusterId{value='5dcd4fc9ac6a812e9c898f5f', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:102}] to localhost:27017
+2019-11-14 15:59:54 [cluster-ClusterId{value='5dcd4fc9ac6a812e9c898f5f', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2623610}
+2019-11-14 15:59:54 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:103}] to localhost:27017
+2019-11-14 15:59:54 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 15:59:54 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 15:59:54 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 5
+2019-11-14 16:57:55 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 16:57:55 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 16:57:55 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 16:57:55 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 16:57:55 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 16:57:55 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573739875654
+2019-11-14 16:57:55 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 16:57:55 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 16:57:55 [cluster-ClusterId{value='5dcd5d636b649c744496b733', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:104}] to localhost:27017
+2019-11-14 16:57:55 [cluster-ClusterId{value='5dcd5d636b649c744496b733', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2003892}
+2019-11-14 16:57:55 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:105}] to localhost:27017
+2019-11-14 16:57:55 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 16:57:55 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 16:57:56 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 6
+2019-11-14 17:08:48 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 17:08:48 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 17:08:49 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 17:08:49 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 17:08:49 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 17:08:49 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573740529001
+2019-11-14 17:08:49 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 17:08:49 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 17:08:49 [cluster-ClusterId{value='5dcd5ff1f9b9bf4f6854c278', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:106}] to localhost:27017
+2019-11-14 17:08:49 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 17:08:49 [cluster-ClusterId{value='5dcd5ff1f9b9bf4f6854c278', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2613642}
+2019-11-14 17:08:49 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:107}] to localhost:27017
+2019-11-14 17:08:49 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 17:08:49 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 7
+2019-11-14 18:00:29 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:00:29 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:00:29 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:00:29 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:00:29 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:00:29 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573743629250
+2019-11-14 18:00:29 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:00:29 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:00:29 [cluster-ClusterId{value='5dcd6c0dd12799409b5a46d8', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:108}] to localhost:27017
+2019-11-14 18:00:29 [cluster-ClusterId{value='5dcd6c0dd12799409b5a46d8', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2186601}
+2019-11-14 18:00:29 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:109}] to localhost:27017
+2019-11-14 18:00:29 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:00:29 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:00:29 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 8
+2019-11-14 18:09:32 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:09:32 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:09:32 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:09:32 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:09:32 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:09:32 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573744172323
+2019-11-14 18:09:32 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:09:32 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:09:32 [cluster-ClusterId{value='5dcd6e2c63cad51ec3f34b60', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:110}] to localhost:27017
+2019-11-14 18:09:32 [cluster-ClusterId{value='5dcd6e2c63cad51ec3f34b60', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2256426}
+2019-11-14 18:09:32 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:111}] to localhost:27017
+2019-11-14 18:09:32 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:09:32 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:09:32 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 9
+2019-11-14 18:13:45 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:13:45 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:13:46 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:13:46 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:13:46 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:13:46 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573744426000
+2019-11-14 18:13:46 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:13:46 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:13:46 [cluster-ClusterId{value='5dcd6f2a51a2ad6f1dde62b4', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:114}] to localhost:27017
+2019-11-14 18:13:46 [cluster-ClusterId{value='5dcd6f2a51a2ad6f1dde62b4', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2526166}
+2019-11-14 18:13:46 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:115}] to localhost:27017
+2019-11-14 18:13:46 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:13:46 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:13:46 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 10
+2019-11-14 18:28:36 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:28:36 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:28:36 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:28:36 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:28:36 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:28:36 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573745316190
+2019-11-14 18:28:36 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:28:36 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:28:36 [cluster-ClusterId{value='5dcd72a48b521f2c53f6a9d4', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:116}] to localhost:27017
+2019-11-14 18:28:36 [cluster-ClusterId{value='5dcd72a48b521f2c53f6a9d4', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2239332}
+2019-11-14 18:28:36 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:117}] to localhost:27017
+2019-11-14 18:28:36 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:28:36 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:28:36 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 11
+2019-11-14 18:30:20 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:30:20 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:30:20 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:30:20 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:30:20 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:30:20 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573745420594
+2019-11-14 18:30:20 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:30:20 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:30:20 [cluster-ClusterId{value='5dcd730c877b00056364d795', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:120}] to localhost:27017
+2019-11-14 18:30:20 [cluster-ClusterId{value='5dcd730c877b00056364d795', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2385436}
+2019-11-14 18:30:20 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:121}] to localhost:27017
+2019-11-14 18:30:20 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:30:20 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:30:20 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 12
+2019-11-14 18:33:55 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:33:55 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:33:55 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:33:55 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:33:55 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:33:55 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573745635641
+2019-11-14 18:33:55 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:33:55 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:33:55 [cluster-ClusterId{value='5dcd73e3b2ec4f3541ca0e06', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:124}] to localhost:27017
+2019-11-14 18:33:55 [cluster-ClusterId{value='5dcd73e3b2ec4f3541ca0e06', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2378773}
+2019-11-14 18:33:55 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:125}] to localhost:27017
+2019-11-14 18:33:55 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:33:55 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:33:56 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 13
+2019-11-14 18:35:49 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:35:49 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:35:49 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:35:49 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:35:49 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:35:49 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573745749783
+2019-11-14 18:35:49 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:35:49 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:35:49 [cluster-ClusterId{value='5dcd7455a98fb011949e3b93', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:126}] to localhost:27017
+2019-11-14 18:35:49 [cluster-ClusterId{value='5dcd7455a98fb011949e3b93', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2285857}
+2019-11-14 18:35:50 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:127}] to localhost:27017
+2019-11-14 18:35:50 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:35:50 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:35:50 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 14
+2019-11-14 18:46:32 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 18:46:32 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 18:46:32 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 18:46:32 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 18:46:32 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 18:46:32 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573746392428
+2019-11-14 18:46:32 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 18:46:32 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 18:46:32 [cluster-ClusterId{value='5dcd76d8e211bd5fe032eb75', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:130}] to localhost:27017
+2019-11-14 18:46:32 [cluster-ClusterId{value='5dcd76d8e211bd5fe032eb75', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1777287}
+2019-11-14 18:46:32 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:131}] to localhost:27017
+2019-11-14 18:46:32 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 18:46:32 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 18:46:32 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 15
+2019-11-14 19:02:43 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 19:02:43 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 19:02:43 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 19:02:43 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 19:02:43 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 19:02:43 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573747363239
+2019-11-14 19:02:43 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 19:02:43 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 19:02:43 [cluster-ClusterId{value='5dcd7aa35df5ed70fa65eee9', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:136}] to localhost:27017
+2019-11-14 19:02:43 [cluster-ClusterId{value='5dcd7aa35df5ed70fa65eee9', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1797606}
+2019-11-14 19:02:43 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:137}] to localhost:27017
+2019-11-14 19:02:43 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 19:02:43 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 19:02:43 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 16
+2019-11-14 19:08:10 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 19:08:10 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 19:08:11 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 19:08:11 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 19:08:11 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 19:08:11 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573747691016
+2019-11-14 19:08:11 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 19:08:11 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 19:08:11 [cluster-ClusterId{value='5dcd7beb846ef13c094921b2', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:140}] to localhost:27017
+2019-11-14 19:08:11 [cluster-ClusterId{value='5dcd7beb846ef13c094921b2', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1792768}
+2019-11-14 19:08:11 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:141}] to localhost:27017
+2019-11-14 19:08:11 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 19:08:11 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 19:08:11 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 17
+2019-11-14 19:18:27 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 19:18:27 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 19:18:27 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 19:18:27 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 19:18:27 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 19:18:27 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573748307319
+2019-11-14 19:18:27 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 19:18:27 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 19:18:27 [cluster-ClusterId{value='5dcd7e53484b8350f3cf23e2', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:144}] to localhost:27017
+2019-11-14 19:18:27 [cluster-ClusterId{value='5dcd7e53484b8350f3cf23e2', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2194435}
+2019-11-14 19:18:27 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:145}] to localhost:27017
+2019-11-14 19:18:27 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 19:18:27 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 19:18:27 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 18
+2019-11-14 19:40:52 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 19:40:52 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 19:40:52 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 19:40:52 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 19:40:52 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 19:40:52 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573749652813
+2019-11-14 19:40:52 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 19:40:53 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 19:40:53 [cluster-ClusterId{value='5dcd83940903e96dae436a35', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:148}] to localhost:27017
+2019-11-14 19:40:53 [cluster-ClusterId{value='5dcd83940903e96dae436a35', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2244302}
+2019-11-14 19:40:53 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:149}] to localhost:27017
+2019-11-14 19:40:53 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 19:40:53 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 19:40:53 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 19
+2019-11-14 19:46:31 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 19:46:31 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 19:46:31 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 19:46:31 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 19:46:31 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 19:46:31 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573749991645
+2019-11-14 19:46:31 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 19:46:31 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 19:46:31 [cluster-ClusterId{value='5dcd84e74a51d411bd4663bb', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:150}] to localhost:27017
+2019-11-14 19:46:31 [cluster-ClusterId{value='5dcd84e74a51d411bd4663bb', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2235246}
+2019-11-14 19:46:31 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 19:46:31 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:151}] to localhost:27017
+2019-11-14 19:46:31 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 19:46:32 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 20
+2019-11-14 20:11:33 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:11:33 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:11:33 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:11:33 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:11:33 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:11:33 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573751493100
+2019-11-14 20:11:33 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:11:33 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:11:33 [cluster-ClusterId{value='5dcd8ac5334ef44301ecff2e', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:154}] to localhost:27017
+2019-11-14 20:11:33 [cluster-ClusterId{value='5dcd8ac5334ef44301ecff2e', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2593686}
+2019-11-14 20:11:33 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:155}] to localhost:27017
+2019-11-14 20:11:33 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:11:33 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:11:33 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 21
+2019-11-14 20:14:29 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:14:29 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:14:29 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:14:29 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:14:29 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:14:29 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573751669776
+2019-11-14 20:14:29 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:14:29 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:14:29 [cluster-ClusterId{value='5dcd8b7547fcc953f4ac5659', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:156}] to localhost:27017
+2019-11-14 20:14:29 [cluster-ClusterId{value='5dcd8b7547fcc953f4ac5659', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2244873}
+2019-11-14 20:14:30 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:157}] to localhost:27017
+2019-11-14 20:14:30 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:14:30 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:14:30 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 22
+2019-11-14 20:26:29 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:26:29 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:26:29 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:26:29 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:26:29 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:26:29 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573752389742
+2019-11-14 20:26:29 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:26:29 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:26:29 [cluster-ClusterId{value='5dcd8e45f5c08d292c5dbb2f', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:158}] to localhost:27017
+2019-11-14 20:26:29 [cluster-ClusterId{value='5dcd8e45f5c08d292c5dbb2f', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1996338}
+2019-11-14 20:26:29 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:159}] to localhost:27017
+2019-11-14 20:26:30 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:26:30 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:26:30 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 23
+2019-11-14 20:29:55 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:29:55 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:29:55 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:29:55 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:29:55 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:29:55 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573752595795
+2019-11-14 20:29:55 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:29:55 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:29:55 [cluster-ClusterId{value='5dcd8f138079306f79653f45', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:160}] to localhost:27017
+2019-11-14 20:29:56 [cluster-ClusterId{value='5dcd8f138079306f79653f45', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2161170}
+2019-11-14 20:29:56 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:161}] to localhost:27017
+2019-11-14 20:29:56 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:29:56 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:29:56 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 24
+2019-11-14 20:42:14 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:42:14 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:42:14 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:42:14 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:42:14 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:42:14 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573753334243
+2019-11-14 20:42:14 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:42:14 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:42:14 [cluster-ClusterId{value='5dcd91f6e048595c9dfe4b44', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:164}] to localhost:27017
+2019-11-14 20:42:14 [cluster-ClusterId{value='5dcd91f6e048595c9dfe4b44', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2313259}
+2019-11-14 20:42:14 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:165}] to localhost:27017
+2019-11-14 20:42:14 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:42:14 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:42:14 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 25
+2019-11-14 20:44:21 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:44:22 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:44:22 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:44:22 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:44:22 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:44:22 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573753462050
+2019-11-14 20:44:22 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:44:22 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:44:22 [cluster-ClusterId{value='5dcd9276afc0ad2fe66da638', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:166}] to localhost:27017
+2019-11-14 20:44:22 [cluster-ClusterId{value='5dcd9276afc0ad2fe66da638', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1964024}
+2019-11-14 20:44:22 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:167}] to localhost:27017
+2019-11-14 20:44:22 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:44:22 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:44:22 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 26
+2019-11-14 20:48:19 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 20:48:20 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 20:48:20 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 20:48:20 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 20:48:20 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 20:48:20 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573753700048
+2019-11-14 20:48:20 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 20:48:20 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 20:48:20 [cluster-ClusterId{value='5dcd9364aacf3940c94e65d0', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:168}] to localhost:27017
+2019-11-14 20:48:20 [cluster-ClusterId{value='5dcd9364aacf3940c94e65d0', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1836604}
+2019-11-14 20:48:20 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:169}] to localhost:27017
+2019-11-14 20:48:20 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 20:48:20 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 20:48:20 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 27
+2019-11-14 21:07:59 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:07:59 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:07:59 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:07:59 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:07:59 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:07:59 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573754879248
+2019-11-14 21:07:59 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:07:59 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:07:59 [cluster-ClusterId{value='5dcd97ffe8bae8140604f3a1', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:172}] to localhost:27017
+2019-11-14 21:07:59 [cluster-ClusterId{value='5dcd97ffe8bae8140604f3a1', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2329399}
+2019-11-14 21:07:59 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:173}] to localhost:27017
+2019-11-14 21:07:59 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:07:59 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:07:59 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 28
+2019-11-14 21:22:50 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:22:50 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:22:50 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:22:50 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:22:50 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:22:50 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573755770475
+2019-11-14 21:22:50 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:22:50 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:22:50 [cluster-ClusterId{value='5dcd9b7ab0f3d07d76102f22', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:176}] to localhost:27017
+2019-11-14 21:22:50 [cluster-ClusterId{value='5dcd9b7ab0f3d07d76102f22', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1767825}
+2019-11-14 21:22:50 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:177}] to localhost:27017
+2019-11-14 21:22:50 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:22:50 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:22:50 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 29
+2019-11-14 21:23:58 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:23:58 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:23:58 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:23:58 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:23:58 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:23:58 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573755838335
+2019-11-14 21:23:58 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:23:58 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:23:58 [cluster-ClusterId{value='5dcd9bbef96391270d53e144', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:180}] to localhost:27017
+2019-11-14 21:23:58 [cluster-ClusterId{value='5dcd9bbef96391270d53e144', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2621116}
+2019-11-14 21:23:58 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:181}] to localhost:27017
+2019-11-14 21:23:58 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:23:58 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:23:58 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 30
+2019-11-14 21:29:59 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:29:59 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:29:59 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:29:59 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:29:59 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:29:59 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573756199891
+2019-11-14 21:30:00 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:30:00 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:30:00 [cluster-ClusterId{value='5dcd9d28f6fdc640c2e71ad0', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:184}] to localhost:27017
+2019-11-14 21:30:00 [cluster-ClusterId{value='5dcd9d28f6fdc640c2e71ad0', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1881872}
+2019-11-14 21:30:00 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:185}] to localhost:27017
+2019-11-14 21:30:00 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:30:00 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:30:00 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 31
+2019-11-14 21:31:46 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:31:46 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:31:46 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:31:46 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:31:46 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:31:46 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573756306759
+2019-11-14 21:31:46 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:31:46 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:31:46 [cluster-ClusterId{value='5dcd9d9291da0a32266f70b4', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:186}] to localhost:27017
+2019-11-14 21:31:46 [cluster-ClusterId{value='5dcd9d9291da0a32266f70b4', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2157153}
+2019-11-14 21:31:46 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:187}] to localhost:27017
+2019-11-14 21:31:47 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:31:47 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:31:47 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 32
+2019-11-14 21:37:16 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:37:16 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:37:16 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:37:16 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:37:16 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:37:16 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573756636876
+2019-11-14 21:37:17 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:37:17 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:37:17 [cluster-ClusterId{value='5dcd9edd7548ad554f78db97', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:190}] to localhost:27017
+2019-11-14 21:37:17 [cluster-ClusterId{value='5dcd9edd7548ad554f78db97', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2346780}
+2019-11-14 21:37:17 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:191}] to localhost:27017
+2019-11-14 21:37:17 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:37:17 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:37:17 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 33
+2019-11-14 21:38:30 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:38:30 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:38:30 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:38:30 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:38:30 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:38:30 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573756710159
+2019-11-14 21:38:30 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:38:30 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:38:30 [cluster-ClusterId{value='5dcd9f26defb6f426a54d3c8', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:192}] to localhost:27017
+2019-11-14 21:38:30 [cluster-ClusterId{value='5dcd9f26defb6f426a54d3c8', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2113035}
+2019-11-14 21:38:30 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:193}] to localhost:27017
+2019-11-14 21:38:30 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:38:30 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:38:30 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 34
+2019-11-14 21:43:36 [main] INFO  ProducerConfig:347 - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = my-transactional-id
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-11-14 21:43:36 [main] INFO  KafkaProducer:532 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Instantiated a transactional producer.
+2019-11-14 21:43:36 [main] WARN  ProducerConfig:355 - The configuration 'group.id' was supplied but isn't a known config.
+2019-11-14 21:43:36 [main] INFO  AppInfoParser:117 - Kafka version: 2.3.1
+2019-11-14 21:43:36 [main] INFO  AppInfoParser:118 - Kafka commitId: 18a913733fb71c01
+2019-11-14 21:43:36 [main] INFO  AppInfoParser:119 - Kafka startTimeMs: 1573757016154
+2019-11-14 21:43:36 [main] INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-14 21:43:36 [main] INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2019-11-14 21:43:36 [cluster-ClusterId{value='5dcda05834ea1c0d2c6a721a', description='null'}-localhost:27017] INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:196}] to localhost:27017
+2019-11-14 21:43:36 [cluster-ClusterId{value='5dcda05834ea1c0d2c6a721a', description='null'}-localhost:27017] INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2065670}
+2019-11-14 21:43:36 [main] INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:197}] to localhost:27017
+2019-11-14 21:43:36 [main] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to -1 with epoch -1
+2019-11-14 21:43:36 [kafka-producer-network-thread | producer-1] INFO  Metadata:261 - [Producer clientId=producer-1, transactionalId=my-transactional-id] Cluster ID: lca_r-pBTci4hcnaraUubQ
+2019-11-14 21:43:36 [kafka-producer-network-thread | producer-1] INFO  TransactionManager:450 - [Producer clientId=producer-1, transactionalId=my-transactional-id] ProducerId set to 1000 with epoch 35
